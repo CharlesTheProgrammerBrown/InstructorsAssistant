@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#607D8B"
+    tools:context="com.example.casper.instructorsassistant.ReminderActivity">
+    <EditText
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/reminderTextView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Enter Reminder"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/reminder_icon_med"
+        android:background="@drawable/fill_form"
+
+        android:textColorHint="@android:color/background_light"
+        android:textColor="@android:color/background_light"
+        android:layout_marginBottom="5dp"
+        android:ems="10"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deadline"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:drawableBottom="@drawable/ic_go_down"/>
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="25sp"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/fill_form"
+        android:drawableLeft="@drawable/date_icon_orange"
+        android:textAlignment="center"/>
+    <Button
+        android:id="@+id/sendReminderBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Reminder"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:drawableRight="@drawable/ic_sendreminder"
+        android:background="@drawable/button_token"
+        android:layout_margin="10dp"
+        android:onClick="onRemindBtnClicked"
+        />
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:weightSum="2"
+    android:orientation="vertical"
+    tools:context="com.example.casper.instructorsassistant.ChooseAccountActivity">
+    <Button
+        android:id="@+id/InstructorClick"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Instructor"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:onClick="onTeacherOpenRegistrationClicked"
+        android:drawableEnd="@drawable/teacher_icon"/>
+    <Button
+        android:id="@+id/StudentClick"
+        android:layout_weight="2"
+        android:text="Student"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onStudentOpenRegisterationClicked"
+        android:drawableLeft="@drawable/student_ico"/>
+</LinearLayout>

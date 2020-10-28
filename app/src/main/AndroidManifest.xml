@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.casper.instructorsassistant">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Instrutors Assistant"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StudentRegistrationActivity" />
+
+        <service
+            android:name=".TokenGeneratorService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".MessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".InstructorsMainPage" />
+        <activity android:name=".AddCoursePage" />
+        <activity
+            android:name=".StudentMainPage"
+            android:label="@string/title_activity_student_main_page"
+            android:theme="@style/MyMaterialTheme" />
+        <activity android:name=".CourseMaterialsActivity" />
+        <activity android:name=".QuickNotificationPage" />
+        <activity android:name=".ReminderActivity" />
+        <activity
+            android:name=".TimeTablePage"
+            android:label="@string/title_activity_time_table_page"
+            android:theme="@style/MyMaterialTheme" />
+        <activity android:name=".AddCourseToTimeTable" />
+        <activity android:name=".StudentCourseMaterialPage" />
+        <activity
+            android:name=".UploadActivity"
+            android:label="@string/title_activity_upload"
+            android:theme="@style/MyMaterialTheme" />
+        <activity android:name=".ReminderListActivity" />
+        <activity
+            android:name=".InstructorReminderListActivity"
+            android:label="@string/title_activity_instructor_reminder_list"
+            android:theme="@style/MyMaterialTheme" />
+        <activity android:name=".StudentReminderActivity" />
+        <activity android:name=".StudentUploadActivity" />
+        <activity android:name=".StudentTimeTableActivity" />
+        <activity
+            android:name=".ChatActivity"
+            android:label="@string/title_activity_chat"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name=".StudentChatActivity"
+            android:label="@string/title_activity_student_chat"
+            android:theme="@style/MyMaterialTheme" />
+        <activity android:name=".ChooseAccountActivity" />
+        <activity android:name=".StudentRemoveCourseActivity" />
+        <activity android:name=".DeleteCourseActivity" />
+        <activity android:name=".StudentNotificationActivity"></activity>
+    </application>
+
+</manifest>

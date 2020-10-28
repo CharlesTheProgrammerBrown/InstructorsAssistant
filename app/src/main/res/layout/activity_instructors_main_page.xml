@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#78909C"
+    tools:context="com.example.casper.instructorsassistant.InstructorsMainPage">
+    <TextView
+        android:id="@+id/pageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Courses"
+        android:textColor="#a3ffff"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:drawableLeft="@drawable/course_book_ash"
+        android:drawableRight="@drawable/course_book_ash"
+        android:background="@drawable/line_stroke"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_instructorpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3.4"
+        app:layout_anchor="@id/pageTitle"
+        android:paddingTop="40dp"
+        app:layoutManager="LinearLayoutManager" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        app:layout_anchor="@id/recycler_view_instructorpage"
+        app:layout_anchorGravity="bottom|right|end"
+        android:src="@drawable/ic_add_course"
+        android:onClick="onFloatBtnClicked"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingDeleteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        app:layout_anchor="@id/recycler_view_instructorpage"
+        app:layout_anchorGravity="bottom|left|end"
+        android:src="@drawable/ic_delete_icon"
+        android:onClick="onDeleteBtnClicked"/>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="12dp"
+    android:gravity="center_horizontal"
+    android:layout_height="80dp">
+    <TextView
+        android:id="@+id/showCourseTextListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Coursename"
+        android:textSize="30sp"
+        android:background="@drawable/fill_form"
+        android:drawableRight="@drawable/course_note"
+        android:gravity="center_horizontal"
+        android:fontFamily="cursive"
+        android:paddingLeft="5dp"/>
+</LinearLayout>

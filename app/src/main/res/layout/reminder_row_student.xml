@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundColour"
+    android:layout_margin="10dp"
+    android:weightSum="4">
+    <TextView
+        android:id="@+id/stdReminderUploadName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exam is on sunday 20th March"
+        android:textColor="#ffffff"
+        android:gravity="top"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/reminder_icon"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+        <TextView
+            android:id="@+id/stdReminderUploadDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="21/2/2017"
+            android:layout_weight="2"
+            android:gravity="center"
+            />
+    </LinearLayout>
+</LinearLayout>

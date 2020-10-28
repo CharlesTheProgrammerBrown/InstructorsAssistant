@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "21510607677",
+    "firebase_url": "https://instructorsassistant.firebaseio.com",
+    "project_id": "instructorsassistant",
+    "storage_bucket": "instructorsassistant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21510607677:android:4b5720ee61b580b5",
+        "android_client_info": {
+          "package_name": "com.example.casper.instructorsassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "21510607677-5ni75hb7thp8fg3dre2krob3868jo025.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.casper.instructorsassistant",
+            "certificate_hash": "2f1fb907a83ae714faa9aba21ad4fdce60a9dbf6"
+          }
+        },
+        {
+          "client_id": "21510607677-spsilhqssucp61sg4cm0ti7h2kghqi0g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9ed5ZsCfF0repoaz5iriQyd9FkYon_oM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "21510607677-spsilhqssucp61sg4cm0ti7h2kghqi0g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
